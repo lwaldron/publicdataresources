@@ -5,17 +5,17 @@ Authors@R:
     c(person(given = "Sean",
            family = "Davis",
            role = c("aut", "cre"),
-           email = "seandavi@gmail.com",
-           comment = c(ORCID = "your-orc-id-here")),
+           email = "seandavi@gmail.com"),
       person(given = "Benjamin",
            family = "Haibe-Kains",
            role = c("aut", "cre"),
-           email = "Benjamin.Haibe-Kains@uhnresearch.ca"),
+           email = "Benjamin.Haibe-Kains@uhnresearch.ca",
+           comment = c(ORCID = "0000-0002-7684-0079")),
       person(given = "Levi",
            family = "Waldron",
            role = c("aut", "cre"),
            email = "lwaldron.research@gmail.com",
-           comment = c(ORCID = "0000-0003-2725-0694")),      
+           comment = c(ORCID = "0000-0003-2725-0694")))      
 Description: The goal of this workshop is to introduce Bioconductor 
     packages for finding, accessing, and using large-scale public data 
     resources including the Gene Expression Omnibus GEO, Sequence Read 
