@@ -1,28 +1,58 @@
-Package: BuildABiocWorkshop2020
-Title: Bioconductor Workshop Template and Github Actions
-Version: 0.1.1
+Package: PublicDataResources
+Title: Public Data Resources in Bioconductor
+Version: 0.2.0
 Authors@R: 
-    person(given = "Sean",
+    c(person(given = "Sean",
            family = "Davis",
            role = c("aut", "cre"),
            email = "seandavi@gmail.com",
-           comment = c(ORCID = "your-orc-id-here"))
-Description: This package serves as a template for using github actions to 
-    prepare a Bioconductor Workshop package for use. In particular,
-    a pkgdown website and docker image are generated based on workflow 
-    settings. 
-License: MIT + file LICENSE
+           comment = c(ORCID = "your-orc-id-here")),
+      person(given = "Benjamin",
+           family = "Haibe-Kains",
+           role = c("aut", "cre"),
+           email = "Benjamin.Haibe-Kains@uhnresearch.ca"),
+      person(given = "Levi",
+           family = "Waldron",
+           role = c("aut", "cre"),
+           email = "lwaldron.research@gmail.com",
+           comment = c(ORCID = "0000-0003-2725-0694")),      
+Description: The goal of this workshop is to introduce Bioconductor 
+    packages for finding, accessing, and using large-scale public data 
+    resources including the Gene Expression Omnibus GEO, Sequence Read 
+    Archive SRA, the Genomic Data Commons GDC, and Bioconductor-hosted 
+    curated data resources for metagenomics, pharmacogenomics PharmacoDB, 
+    and The Cancer Genome Atlas. 
+License: Creative Commons 4.0 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+VignetteBuilder: knitr
 Depends: 
     Biobase
 Suggests: 
     knitr,
     rmarkdown,
     pkgdown
-URL: https://seandavi.github.io/BuildABiocWorkshop2020/
-BugReports: https://github.com/seandavi/BuildABiocWorkshop2020/issues/new/choose
-VignetteBuilder: knitr
-DockerImage: seandavi/buildabiocworkshop2020:latest
+Imports:
+    TCGAbiolinks, 
+    GEOquery, 
+    GenomicDataCommons,
+    limma,
+    curatedTCGAData,
+    recount,
+    curatedMetagenomicData,
+    phyloseq,
+    HMP16SData,
+    caTools,
+    piano,
+    isa2,
+    VennDiagram,
+    downloader,
+    gdata,
+    AnnotationDbi,
+    hgu133a.db,
+    PharmacoGx
+URL: https://waldronlab.io/publicdataresources/
+BugReports: https://github.com/waldronlab/publicdataresources/issues/new/choose
+DockerImage: waldronlab/publicdataresources:latest
